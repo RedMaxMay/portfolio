@@ -10,7 +10,7 @@ export const projectList = [
     description: "E-commerce plants store",
     stack:
       "Semantic HTML5 markup, React SPA, CSS custom properties, CSS Grid, Flexbox, Responsive Design, Axios, LocalStorage, React, React Router, React Hooks, CSS modules, REST API, Redux Toolkit",
-    demo: "https://redmaxmay.github.io/demo_greenshop/",
+    demo: "https://greenshop-maxmay.netlify.app/",
     github: "https://github.com/RedMaxMay/greenshop",
   },
   {
@@ -20,7 +20,7 @@ export const projectList = [
     description: "Get information about countries",
     stack:
       "Mobile-first workflow, React SPA, React - JS library, Styled Components - For styles, Semantic HTML5 markup, CSS custom properties, Flexbox, CSS Grid, Responsive Design, Axios, REST API, React Router v6, React Icons",
-    demo: "https://redmaxmay.github.io/countries/1",
+    demo: "https://redmaxmay.github.io/countries",
     github: "https://github.com/RedMaxMay/countries",
   },
   {

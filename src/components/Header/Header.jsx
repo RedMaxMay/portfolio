@@ -12,6 +12,12 @@ export default function Header() {
   const toggleTheme = () => setTheme(theme === "light" ? "dark" : "light");
 
   useEffect(() => {
+    isOpen
+      ? (document.body.style.overflow = "hidden")
+      : (document.body.style.overflow = "auto");
+  }, [isOpen]);
+
+  useEffect(() => {
     document.body.setAttribute("data-theme", theme);
   }, [theme]);
 
