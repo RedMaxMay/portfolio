@@ -1,0 +1,33 @@
+.skills_wrap {
+    margin-bottom: 40px;
+}
+
+.skills_wrap>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.descr {
+    color: var(--colors-text-secondary);
+    margin-bottom: 20px;
+}
+
+.skills_list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 768px) {
+    .skills_wrap>div {
+        text-align: center;
+    }
+
+}

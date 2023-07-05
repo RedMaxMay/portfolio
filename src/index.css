@@ -1,13 +1,73 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --family-headers: 'Cardo', serif;
+  --family-text: 'Inter', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+button {
+  cursor: pointer;
+}
+
+body[data-theme="light"] {
+  --colors-text: #333333;
+  --colors-text-secondary: #979797;
+  --colors-bg: #fafafa;
+  --colors-bg-secondary: #ebf3fa;
+
+  --primary: #5c62ec;
+  --primary-hover: #3f43cc;
+  --secondary: #E3E8ED;
+
+  --shadow: rgba(149, 157, 165, 0.5) 0 2px 6px;
+  --shadow-secondary: rgba(0, 0, 0, 0.16) 0px 1px 1px;
+
+  --shadow-hover: rgba(149, 157, 165, 0.8) 0 3px 8px;
+  --dropshadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+body[data-theme="dark"] {
+  --colors-text: #fafafa;
+  --colors-text-secondary: #979797;
+  --colors-bg: #111827;
+  --colors-bg-secondary: #284864;
+
+  --primary: #5c62ec;
+  --primary-hover: #3f43cc;
+  --secondary: #172135;
+
+  --shadow: rgba(149, 157, 165, 0.5) 2px 2px 6px;
+  --shadow-secondary: rgba(149, 157, 165, 0.5) 1px 1px 4px;
+
+  --shadow-hover: rgba(149, 157, 165, 0.7) 0 3px 8px;
+  --dropshadow: 1px 1px 4px rgba(149, 157, 165, 0.65);
+
+}
+
+body {
+  font-family: var(--family-text);
+  color: var(--colors-text);
+  background-color: var(--colors-bg);
+}
+
+h1,
+h2 {
+  font-family: var(--family-headers);
+  font-weight: 900;
+  font-size: 2rem;
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  width: 40px;
+  height: 2px;
+  background-color: var(--primary);
+  position: absolute;
+  bottom: -10px;
+  left: calc(50% - 20px);
+}
+
+h2 {
+  margin-bottom: 20px;
 }
