@@ -1,8 +1,8 @@
 import React from "react";
 import Container from "../Container/Container";
 import s from "./style.module.css";
-import { projectList } from "./projectsList";
 import ProjectItem from "../ProjectItem/ProjectItem";
+import { projectList } from "../../utils/ProjectsList/projectsList";
 
 export default function MyProjects() {
   return (

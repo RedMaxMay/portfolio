@@ -22,7 +22,7 @@ export default function Header() {
   }, [theme]);
 
   const handleHamburgerClick = () => {
-    setIsOpen(!isOpen);
+    isOpen ? setIsOpen(false) : setIsOpen(true);
   };
 
   return (

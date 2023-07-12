@@ -72,7 +72,7 @@ export default function Nav({ isOpen, handleHamburgerClick }) {
         <ul>
           <li>
             <ScrollLink
-              onClick={isOpen ? handleHamburgerClick : ""}
+              onClick={handleHamburgerClick}
               activeClass="active"
               to="about"
               spy={true}
@@ -85,7 +85,7 @@ export default function Nav({ isOpen, handleHamburgerClick }) {
           </li>
           <li>
             <ScrollLink
-              onClick={isOpen ? handleHamburgerClick : ""}
+              onClick={handleHamburgerClick}
               activeClass="active"
               to="stack"
               spy={true}
@@ -98,7 +98,7 @@ export default function Nav({ isOpen, handleHamburgerClick }) {
           </li>
           <li>
             <ScrollLink
-              onClick={isOpen ? handleHamburgerClick : ""}
+              onClick={handleHamburgerClick}
               activeClass="active"
               to="projects"
               spy={true}
@@ -111,7 +111,7 @@ export default function Nav({ isOpen, handleHamburgerClick }) {
           </li>
           <li>
             <ScrollLink
-              onClick={isOpen ? handleHamburgerClick : ""}
+              onClick={handleHamburgerClick}
               activeClass="active"
               to="contacts"
               spy={true}
