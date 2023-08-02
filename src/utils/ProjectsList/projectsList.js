@@ -2,6 +2,7 @@ import greenshop from "./img/greenshop.jpg";
 import countries from "./img/countries.jpg";
 import pages from "./img/pages.jpg";
 import media from "./img/media.jpg";
+import cars from "./img/cars.jpg";
 
 export const projectList = [
   {
@@ -16,6 +17,26 @@ export const projectList = [
   },
   {
     id: 2,
+    img: media,
+    title: "MaxMay Media",
+    description: "Online application for watching videos (YouTube clone)",
+    stack:
+      "React - JS library, React Router, React Hooks, Semantic HTML5 markup, Responsive Design, Flexbox, Axios, Material UI, Material Icons, Firebase API",
+    demo: "https://maxmay-media.netlify.app/",
+    github: "https://github.com/RedMaxMay/youtube_clone",
+  },
+  {
+    id: 3,
+    img: cars,
+    title: "Cars Info",
+    description: "Explore the information about cars",
+    stack:
+      "Next JS 13, TypeScript, React - JS library, React Hooks, Tailwind CSS, Responsive Design, Firebase API, Car images API",
+    demo: "https://cars-maxmay.vercel.app/",
+    github: "https://github.com/RedMaxMay/cars",
+  },
+  {
+    id: 4,
     img: countries,
     title: "Countries",
     description: "Get information about countries",
@@ -25,7 +46,7 @@ export const projectList = [
     github: "https://github.com/RedMaxMay/countries",
   },
   {
-    id: 3,
+    id: 5,
     img: pages,
     title: "Pages",
     description: "Online book store",
@@ -33,15 +54,5 @@ export const projectList = [
       "Responsive Design, React SPA, Semantic HTML5 markup, CSS custom properties, CSS Grid, Flexbox, React, React Router, React Hooks, CSS modules",
     demo: "https://redmaxmay.github.io/book/",
     github: "https://github.com/RedMaxMay/book",
-  },
-  {
-    id: 4,
-    img: media,
-    title: "MaxMay Media",
-    description: "Online application for watching videos (YouTube clone)",
-    stack:
-      "React - JS library, React Router, React Hooks, Semantic HTML5 markup, Responsive Design, Flexbox, Axios, Material UI, Material Icons, Firebase API",
-    demo: "https://maxmay-media.netlify.app/",
-    github: "https://github.com/RedMaxMay/youtube_clone",
   },
 ];
