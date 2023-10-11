@@ -8,6 +8,7 @@ export default function ProjectItem({
   stack,
   demo,
   github,
+  note,
 }) {
   const stackList = stack.split(",");
 
@@ -59,7 +60,12 @@ export default function ProjectItem({
               href={github}
               rel="noreferrer"
             >
-              <svg className={s.svg_git} width="20" height="20" viewBox="0 0 20 20">
+              <svg
+                className={s.svg_git}
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+              >
                 <path
                   fillRule="evenodd"
                   clipRule="evenodd"
@@ -70,6 +76,7 @@ export default function ProjectItem({
             </a>
           </div>
         </div>
+        {note && <p className={s.note}>* {note}</p>}{" "}
       </div>
     </div>
   );

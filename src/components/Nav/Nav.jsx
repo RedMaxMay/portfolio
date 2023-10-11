@@ -3,6 +3,9 @@ import s from "./style.module.css";
 import { Link as ScrollLink } from "react-scroll";
 
 export default function Nav({ isOpen, handleHamburgerClick }) {
+  const desktopOnClick = () => {
+    if (isOpen) handleHamburgerClick();
+  };
   return (
     <>
       <div
@@ -72,7 +75,7 @@ export default function Nav({ isOpen, handleHamburgerClick }) {
         <ul>
           <li>
             <ScrollLink
-              onClick={isOpen ? handleHamburgerClick : ""}
+              onClick={desktopOnClick}
               activeClass="active"
               to="about"
               spy={true}
@@ -85,7 +88,7 @@ export default function Nav({ isOpen, handleHamburgerClick }) {
           </li>
           <li>
             <ScrollLink
-              onClick={isOpen ? handleHamburgerClick : ""}
+              onClick={desktopOnClick}
               activeClass="active"
               to="stack"
               spy={true}
@@ -98,7 +101,7 @@ export default function Nav({ isOpen, handleHamburgerClick }) {
           </li>
           <li>
             <ScrollLink
-              onClick={isOpen ? handleHamburgerClick : ""}
+              onClick={desktopOnClick}
               activeClass="active"
               to="projects"
               spy={true}
@@ -111,7 +114,7 @@ export default function Nav({ isOpen, handleHamburgerClick }) {
           </li>
           <li>
             <ScrollLink
-              onClick={isOpen ? handleHamburgerClick : ""}
+              onClick={desktopOnClick}
               activeClass="active"
               to="contacts"
               spy={true}

@@ -3,6 +3,7 @@ import countries from "./img/countries.jpg";
 import pages from "./img/pages.jpg";
 import media from "./img/media.jpg";
 import cars from "./img/cars.jpg";
+import mern from "./img/mern.jpg";
 
 export const projectList = [
   {
@@ -54,5 +55,16 @@ export const projectList = [
       "Responsive Design, React SPA, Semantic HTML5 markup, CSS custom properties, CSS Grid, Flexbox, React, React Router, React Hooks, CSS modules",
     demo: "https://redmaxmay.github.io/book/",
     github: "https://github.com/RedMaxMay/book",
+  },
+  {
+    id: 6,
+    img: mern,
+    title: "MaxMay Shop",
+    description: "MERN Stack eCommerce Platform",
+    stack:
+      "MongoDB, Express, React, Node.js, Mongoose, JWT, Responsive Design, React Bootstrap, Semantic HTML5 markup, Redux Toolkit, HTTP-Only cookies",
+    demo: "https://maxmayshop.onrender.com",
+    github: "https://github.com/RedMaxMay/mern-shop",
+    note: "When you open Live Demo for the first time, the server is starting, you need to wait a little",
   },
 ];

@@ -9,6 +9,10 @@ button {
   cursor: pointer;
 }
 
+a:active {
+  text-decoration: none !important
+}
+
 body[data-theme="light"] {
   --colors-text: #333333;
   --colors-text-secondary: #979797;

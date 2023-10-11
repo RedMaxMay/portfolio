@@ -100,6 +100,11 @@
     fill: var(--colors-text);
 }
 
+.note {
+    color: var(--colors-text-secondary);
+    font-size: 0.75rem;
+}
+
 
 @media (max-width: 768px) {
     .project_item {
@@ -113,7 +118,8 @@
     .project_text {
         width: 100%;
     }
-/* 
+
+    /* 
     .links {
         flex-direction: column;
         gap: 20px;
